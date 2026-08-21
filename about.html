@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="min-h-screen antialiased text-gray-900">
+    <header class="bg-black/90 backdrop-blur-md z-50 px-6 h-20 flex justify-between items-center text-white fixed w-full top-0 shadow-lg transition-all duration-300">
+        <h1 class="font-bold text-2xl ml-5 tracking-wide hover:text-blue-400 transition-colors cursor-pointer">LUXE REALTY</h1>
+        <nav>
+            <ul class="md:flex gap-7 hidden font-medium text-sm">
+                <li><a href="home" class="hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400">Home</a></li>
+                <li><a href="#properties" class="hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400">Properties</a></li>
+                <li><a href="#about" class="hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400">About Us</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400">Contact</a></li>
+                <li><a href="#favorities" class="hover:text-blue-400 transition-colors py-2 border-b-2 border-transparent hover:border-blue-400">Favorites</a></li>
+            </ul>
+        </nav>
+        <button class="text-xl cursor-pointer md:hidden hover:text-blue-400 transition-colors"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <main>
+          <section class="relative min-h-dvh px-4 bg-[url('/images/about.png')] bg-cover bg-center overflow-hidden group">
+            <div class="inset-0 p-4 bg-black/60 absolute flex items-center flex-col justify-center backdrop-brightness-90 transition-all duration-700 group-hover:bg-black/50">
+                <h2 class="font-bold text-4xl md:text-5xl text-center text-white leading-tight transition-all duration-700 transform group-hover:scale-105">Find a home that matches the life <br> you're building.</h2>
+                <p class="text-white/90 text-center mt-6 text-lg max-w-2xl leading-relaxed">Nine hundred homes listed, twelve neighbourhoods known street by street, and advisors who answer the phone.</p>
+            </div>
+        </section>
+        <section class="min-h-[80vh] px-4 py-12 bg-gray-100">
+            <div class="max-w-6xl mx-auto flex fleex-col md:flex-row gap-10 items-center">
+                <div class="w-full md:w-1/2">
+                    <img src="images/Skyline.png" alt="Skyline" class="h-[500px] w-full shadow-lg rounded-2xl object-cover">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-lg font-semibold text-gray-600 mb-3">Our story</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-black leading-tight mb-6">Started in one office above a bakery.<br>Still answering our own phones.</h3>
+                    <p class="text-gray-600 mb-4">LUXE REALTY opened in 2009 with two advisors and a conviction that property advice should sound like a conversation, not a pitch. Seventeen years later we work across four cities and still cap each advisor's listings so nobody becomes a number on a spreadsheet.</p>
+                    <p class="text-gray-600">We photograph every home ourselves, walk every neighbourhood before we describe it, and tell clients when a property is wrong for them — which is, more often than not, why they come back.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pt-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-bold text-black text-2xl mb-3 tracking-wide">LUXE REALTY</h2>
+            <p class="text-gray-600 max-w-xl">An independent estate agency matching considered buyers and tenants with homes worth living in since 2009.</p>
+            
+            <div class="flex gap-4 mt-6">
+                <a href="#" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-blue-600 transition-all duration-300 shadow-sm">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-pink-600 transition-all duration-300 shadow-sm">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-blue-700 transition-all duration-300 shadow-sm">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-wrap py-10 mt-6 gap-12">
+                <div>
+                    <h2 class="font-bold text-lg mb-5 text-gray-900">Explore</h2>
+                    <div class="flex flex-col gap-3 text-gray-600 text-sm">
+                        <a href="#home" class="hover:text-black transition-all duration-200">Home</a>
+                        <a href="#properties" class="hover:text-black  transition-all duration-200">Properties</a>
+                        <a href="#about" class="hover:text-black  transition-all duration-200">About us</a>
+                        <a href="#contact" class="hover:text-black  transition-all duration-200">Contact</a>
+                        <a href="#saved-homes" class="hover:text-black  transition-all duration-200">Saved homes</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="font-bold text-lg mb-5 text-gray-900">Services</h2>
+                    <div class="flex flex-col gap-3 text-gray-600 text-sm">
+                        <a href="#residential" class="hover:text-black  transition-all duration-200">Residential</a>
+                        <a href="#lettings-management" class="hover:text-black  transition-all duration-200">Lettings & management</a>
+                        <a href="#commercial-leasing" class="hover:text-black  transition-all duration-200">Commercial leasing</a>
+                        <a href="#property-valuation" class="hover:text-black  transition-all duration-200">Property valuation</a>
+                        <a href="#investment-advisory" class="hover:text-black  transition-all duration-200">Investment advisory</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="font-bold text-lg mb-5 text-gray-900">Get in touch</h2>
+                    <div class="flex flex-col gap-4 text-gray-600 text-sm">
+                        <p class="flex gap-3 items-start">
+                            <i class="fa-solid fa-location-dot mt-1 text-black"></i>
+                            <span>214 Harbour Street, Suite 30,<br>Seattle WA</span>
+                        </p>
+                        <p class="flex gap-3 items-center">
+                            <i class="fa-solid fa-phone text-black"></i>
+                            <span>+1 (415) 555-0100</span>
+                        </p>
+                        <p class="flex gap-3 items-center">
+                            <i class="fa-solid fa-envelope text-black"></i>
+                            <span>hello@LUXEREALTY.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black py-8 px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 w-full mt-6 gap-2">
+            <p>&copy; 2026 Northaven Estates. All rights reserved.</p>
+            <a href="#privacy policy" class="hover:text-white transition-colors">Privacy policy - Terms of service</a>
+        </div>
+    </footer>
+</body>
+</html>
