@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="min-h-screen">
+    <header class="bg-black/90 z-50 px-6 h-16 flex justify-between items-center text-white fixed w-full top-0 shadow-lg transition-all duration-300">
+        <a href="index.html" class="font-bold text-2xl ml-5 hover:text-[#9eb8c2] transition-colors cursor-pointer">
+            LUXE REALTY
+        </a>
+        <nav id="menu">
+            <ul class="md:flex gap-7 hidden font-medium text-sm">
+                <li>
+                    <a href="index.html" class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="properties.html" class="text-[#9eb8c2] py-2 border-b-2 border-[#9eb8c2]">
+                        Properties
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="favorities.html" class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        Favorites
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button id="btn" class="text-xl cursor-pointer md:hidden hover:text-[#9eb8c2] transition-colors" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <main>
+        <section class="bg-[#f5f4ef] px-6 py-10 md:px-12 md:py-12">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="font-bold text-4xl md:text-5xl mt-16">Properties</h1>
+                <p class="font-medium mt-3 text-gray-600">Home / Properties</p>
+            </div>
+        </section>
+        <section class="min-h-[80vh] px-4 py-12 md:py-16 bg-[#7d7d77] flex items-center">
+            <div class="w-full max-w-4xl mx-auto bg-white rounded-2xl p-8 md:p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="font-bold text-2xl mb-5 flex gap-3 items-center" ><i class="fa-solid fa-filter text-xs"></i>Filter properties</h2>
+                <form class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-2">
+                        <label for="type" class="text-lg font-semibold text-gray-800">
+                            Property type
+                        </label>
+                        <select id="type" name="type" class="w-full px-3 py-2.5 rounded-lg border border-gray-300 bg-white outline-none focus:border-black transition-all">
+                            <option value="">Any type</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="house">House</option>
+                            <option value="studio">Studio</option>
+                            <option value="townhouse">Townhouse</option>
+                            <option value="villa">Villa</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="location" class="text-lg font-semibold text-gray-800">
+                            Location
+                        </label>
+                        <select id="location" name="location" class="w-full px-3 py-2.5 rounded-lg border border-gray-300 bg-white outline-none focus:border-black transition-all">
+                            <option value="">Any location</option>
+                            <option value="manhattan">Manhattan, New York</option>
+                            <option value="palm-coast">Palm Coast, Florida</option>
+                            <option value="portland">Portland, Oregon</option>
+                            <option value="shoreditch">Shoreditch, London</option>
+                            <option value="seattle">Seattle, Washington</option>
+                            <option value="scottsdale">Scottsdale, Arizona</option>
+                            <option value="naperville">Naperville, Boston</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="sale-rent" class="text-lg font-semibold text-gray-800">
+                            Sale/Rent
+                        </label>
+                        <select id="sale-rent" name="sale-rent" class="w-full px-3 py-2.5 rounded-lg border border-gray-300 bg-white outline-none focus:border-black transition-all">
+                            <option value="">Sale & Rent</option>
+                            <option value="sale">For sale</option>
+                            <option value="rent">For rent</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="minPrice" class="text-lg font-semibold text-gray-800">
+                            Min price
+                        </label>
+                        <input type="number" id="minPrice" name="minPrice" class="w-full rounded-lg border px-3 py-2.5 border-gray-300 bg-white outline-none focus:border-black transition-all" placeholder="0">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="maxPrice" class="text-lg font-semibold text-gray-800">
+                            Max price
+                        </label>
+                        <input type="number" id="maxPrice" name="maxPrice" class="w-full rounded-lg border border-gray-300 py-2.5 px-3 bg-white outline-none focus:border-black transition-all" placeholder="Any">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="bedrooms" class="text-lg font-semibold text-gray-800">
+                            Bedrooms
+                        </label>
+                        <select id="bedrooms" name="bedrooms" class="w-full px-3 py-2.5 rounded-lg border border-gray-300 bg-white outline-none focus:border-black transition-all">
+                            <option value="">Any</option>
+                            <option value="1">1+ bedrooms</option>
+                            <option value="2">2+ bedrooms</option>
+                            <option value="3">3+ bedrooms</option>
+                            <option value="4">4+ bedrooms</option>
+                            <option value="5">5+ bedrooms</option>
+                        </select>
+                    </div>
+                    <div class="flex gap-3">
+                        <button type="button" class=" rounded-lg py-2 bg-[#142a34] text-white px-4 flex justify-center items-center hover:bg-[#0e3444] cursor-pointer transition-all duration-300 shadow-md hover:shadow-lg">
+                        Apply filters
+                    </button>
+                    <button type="button" class="rounded-lg py-2 px-2 bg-[#142a34] text-white flex items-center gap-2 justify-center hover:bg-[#0e3444] cursor-pointer transition-all duration-300 shadow-md hover:shadow-lg">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Reset filters
+                    </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="properties" class="min-h-[80vh] px-4 py-12 bg-[#2d5567]">
+            <div class="max-w-6xl mx-auto relative">
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-4 text-gray-500"></i>
+                    <input type="text" placeholder="Live search by title, location or type..." class="w-full rounded-lg border border-gray-300 py-3 px-4 pl-10 bg-white outline-none focus:border-black transition-all shadow-sm">
+                </div>
+                <div class="flex mt-4 items-center gap-3 mb-4">
+                    <h2 class="shrink-0 font-bold text-white">
+                        Sort by
+                    </h2>
+                    <select class="w-full px-3 py-2 rounded-lg border border-gray-300 bg-white outline-none focus:border-black transition-all">
+                        <option>Featured first</option>
+                        <option>Price: low to high</option>
+                        <option>Price: high to low</option>
+                    </select>
+                </div>
+                <h2 class="font-bold text-2xl text-blue-100 mb-6">
+                    Showing 6 of 9 properties
+                </h2>
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <div class="bg-[#0c1b21] w-75 shrink-0 rounded-2xl relative overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                        <span class="absolute top-4 left-3 z-20 text-white rounded-full px-3 py-1 text-xs font-semibold bg-[#0C1B21]/80 border border-white/10">
+                            For Sale
+                        </span>
+                        <span class="absolute top-3 right-3 z-20 rounded-full px-2 bg-[#2D5567] py-1 text-white">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <div class="overflow-hidden h-48">
+                            <img src="images/Skyline.png" alt="Skyline Penthouse Residence" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="px-4 pb-5">
+                            <h2 class="text-blue-100 font-bold text-xl ml-1 mb-1 mt-4">
+                                $1,850,000
+                            </h2>
+                            <p class="text-blue-100/90 ml-1 mb-2 font-medium">
+                                Skyline Penthouse Residence
+                            </p>
+                            <p class="flex gap-2 items-center ml-1 text-blue-200/80 text-sm mb-4">
+                                <i class="fa-solid fa-location-dot text-blue-400"></i>
+                                Manhattan, New York
+                            </p>
+                            <hr class="border-white/10">
+                            <div class="text-blue-100/90 flex justify-between px-3 py-3 text-sm">
+                                <p>3 Beds</p>
+                                <p>3 Baths</p>
+                                <p>2450 ft²</p>
+                            </div>
+                            <hr class="border-white/10">
+                            <button class="w-full rounded-xl bg-[#142a34] text-white flex items-center justify-center py-2.5 hover:bg-blue-600 cursor-pointer transition-colors duration-300 font-medium mt-4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-[#0c1b21] w-75 shrink-0 rounded-2xl overflow-hidden relative group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                        <span class="absolute top-4 left-3 z-20 text-white rounded-full px-3 py-1 text-xs font-semibold bg-[#0C1B21]/80">
+                            For Sale
+                        </span>
+                        <span class="absolute top-3 right-3 z-20 rounded-full px-2 bg-[#2D5567] py-1 text-white">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <div class="overflow-hidden h-48">
+                            <img src="images/family.png" alt="Maple Grove Family Home" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="px-4 pb-5">
+                            <h2 class="text-blue-100 font-bold text-xl ml-1 mb-1 mt-4">
+                                $620,000
+                            </h2>
+                            <p class="text-blue-100/90 ml-1 mb-2 font-medium">
+                                Maple Grove Family Home
+                            </p>
+                            <p class="flex gap-2 items-center ml-1 text-blue-200/80 text-sm mb-4">
+                                <i class="fa-solid fa-location-dot text-blue-400"></i>
+                                Palm Coast, Florida
+                            </p>
+                            <hr class="border-white/10">
+                            <div class="text-blue-100/90 flex justify-between px-3 py-3 text-sm">
+                                <p>4 Beds</p>
+                                <p>3 Baths</p>
+                                <p>2980 ft²</p>
+                            </div>
+                            <hr class="border-white/10">
+                            <button class="w-full rounded-xl bg-[#142a34] text-white flex items-center justify-center py-2.5 hover:bg-blue-600 cursor-pointer transition-colors duration-300 font-medium mt-4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-[#0c1b21] w-75 shrink-0 rounded-2xl overflow-hidden relative group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                        <span class="absolute top-4 left-3 z-20 text-white rounded-full px-3 py-1 text-xs font-semibold bg-[#0C1B21]/80">
+                            For Rent
+                        </span>
+                        <span class="absolute top-3 right-3 z-20 rounded-full px-2 bg-[#2D5567] py-1 text-white">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <div class="overflow-hidden h-48">
+                            <img src="images/studio.png" alt="Brickworks Loft Studio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="px-4 pb-5">
+                            <h2 class="text-blue-100 font-bold text-xl ml-1 mb-1 mt-4">
+                                $2,400/mo
+                            </h2>
+                            <p class="text-blue-100/90 ml-1 mb-2 font-medium">
+                                Brickworks Loft Studio
+                            </p>
+                            <p class="flex gap-2 items-center ml-1 text-blue-200/80 text-sm mb-4">
+                                <i class="fa-solid fa-location-dot text-blue-400"></i>
+                                Portland, Oregon
+                            </p>
+                            <hr class="border-white/10">
+                            <div class="text-blue-100/90 flex justify-between px-3 py-3 text-sm">
+                                <p>1 Bed</p>
+                                <p>1 Bath</p>
+                                <p>720 ft²</p>
+                            </div>
+                            <hr class="border-white/10">
+                            <button class="w-full rounded-xl bg-[#142a34] text-white flex items-center justify-center py-2.5 hover:bg-blue-600 cursor-pointer transition-colors duration-300 font-medium mt-4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-[#0c1b21] w-75 shrink-0 rounded-2xl overflow-hidden relative group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                        <span class="absolute top-4 left-3 z-20 text-white rounded-full px-3 py-1 text-xs font-semibold bg-[#0C1B21]/80">
+                            For Sale
+                        </span>
+                        <span class="absolute top-3 right-3 z-20 rounded-full px-2 bg-[#2D5567] py-1 text-white">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <div class="overflow-hidden h-48">
+                            <img src="images/villa.png" alt="Azure Beachfront Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="px-4 pb-5">
+                            <h2 class="text-blue-100 font-bold text-xl ml-1 mb-1 mt-4">
+                                $3,250,000
+                            </h2>
+                            <p class="text-blue-100/90 ml-1 mb-2 font-medium">
+                                Azure Beachfront Villa
+                            </p>
+                            <p class="flex gap-2 items-center ml-1 text-blue-200/80 text-sm mb-4">
+                                <i class="fa-solid fa-location-dot text-blue-400"></i>
+                                Shoreditch, London
+                            </p>
+                            <hr class="border-white/10">
+                            <div class="text-blue-100/90 flex justify-between px-3 py-3 text-sm">
+                                <p>5 Beds</p>
+                                <p>6 Baths</p>
+                                <p>5400 ft²</p>
+                            </div>
+                            <hr class="border-white/10">
+                            <button class="w-full rounded-xl bg-[#142a34] text-white flex items-center justify-center py-2.5 hover:bg-blue-600 cursor-pointer transition-colors duration-300 font-medium mt-4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-[#0c1b21] w-75 shrink-0 rounded-2xl overflow-hidden relative group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                        <span class="absolute top-4 left-3 z-20 text-white rounded-full px-3 py-1 text-xs font-semibold bg-[#0C1B21]/80">
+                            For Sale
+                        </span>
+                        <span class="absolute top-3 right-3 z-20 rounded-full px-2 bg-[#2D5567] py-1 text-white">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <div class="overflow-hidden h-48">
+                            <img src="images/villa.png" alt="Vista Hill Modern Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="px-4 pb-5">
+                            <h2 class="text-blue-100 font-bold text-xl ml-1 mb-1 mt-4">
+                                $2,150,000
+                            </h2>
+                            <p class="text-blue-100/90 ml-1 mb-2 font-medium">
+                                Vista Hill Modern Villa
+                            </p>
+                            <p class="flex gap-2 items-center ml-1 text-blue-200/80 text-sm mb-4">
+                                <i class="fa-solid fa-location-dot text-blue-400"></i>
+                                Scottsdale, Arizona
+                            </p>
+                            <hr class="border-white/10">
+                            <div class="text-blue-100/90 flex justify-between px-3 py-3 text-sm">
+                                <p>4 Beds</p>
+                                <p>5 Baths</p>
+                                <p>4300 ft²</p>
+                            </div>
+                            <hr class="border-white/10">
+                            <button class="w-full rounded-xl bg-[#142a34] text-white flex items-center justify-center py-2.5 hover:bg-blue-600 cursor-pointer transition-colors duration-300 font-medium mt-4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-[#0c1b21] w-75 shrink-0 rounded-2xl overflow-hidden relative group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                        <span class="absolute top-4 left-3 z-20 text-white rounded-full px-3 py-1 text-xs font-semibold bg-[#0C1B21]/80">
+                            For Rent
+                        </span>
+                        <span class="absolute top-3 right-3 z-20 rounded-full px-2 bg-[#2D5567] py-1 text-white">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <div class="overflow-hidden h-48">
+                            <img src="images/office.png" alt="Harbor Point Office Suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="px-4 pb-5">
+                            <h2 class="text-blue-100 font-bold text-xl ml-1 mb-1 mt-4">
+                                $8,800/mo
+                            </h2>
+                            <p class="text-blue-100/90 ml-1 mb-2 font-medium">
+                                Harbor Point Office Suite
+                            </p>
+                            <p class="flex gap-2 items-center ml-1 text-blue-200/80 text-sm mb-4">
+                                <i class="fa-solid fa-location-dot text-blue-400"></i>
+                                Seattle, Washington
+                            </p>
+                            <hr class="border-white/10">
+                            <div class="text-blue-100/90 flex justify-between px-3 py-3 text-sm">
+                                <p>Office</p>
+                                <p>2 Baths</p>
+                                <p>4100 ft²</p>
+                            </div>
+                            <hr class="border-white/10">
+                            <button class="w-full rounded-xl bg-[#142a34] text-white flex items-center justify-center py-2.5 hover:bg-blue-600 cursor-pointer transition-colors duration-300 font-medium mt-4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer id="contact" class="pt-16 bg-[#f5f4ef]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-bold text-black text-2xl mb-3">
+                LUXE REALTY
+            </h2>
+            <p class="text-gray-600 max-w-xl">
+                An independent estate agency matching considered buyers
+                and tenants with homes worth living in since 2009.
+            </p>
+            <div class="flex gap-4 mt-6">
+                <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-blue-600 transition-all duration-300">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-pink-600 transition-all duration-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-blue-600 transition-all duration-300">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="flex flex-wrap py-10 mt-6 gap-10">
+                <div class="w-full sm:w-[45%] lg:w-[30%]">
+                    <h2 class="font-bold text-lg mb-5 text-gray-900">
+                        Explore
+                    </h2>
+                    <div class="flex flex-col gap-3 text-gray-600 text-sm">
+                        <a href="index.html" class="hover:text-[#2d5567] transition-colors">
+                            Home
+                        </a>
+                        <a href="properties.html" class="hover:text-[#2d5567] transition-colors">
+                            Properties
+                        </a>
+                        <a href="about.html" class="hover:text-[#2d5567] transition-colors">
+                            About us
+                        </a>
+                        <a href="contact.html" class="hover:text-[#2d5567] transition-colors">
+                            Contact
+                        </a>
+                        <a href="favorities.html" class="hover:text-[#2d5567] transition-colors">
+                            Saved homes
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full sm:w-[45%] lg:w-[30%]">
+                    <h2 class="font-bold text-lg mb-5 text-gray-900">
+                        Services
+                    </h2>
+                    <div class="flex flex-col gap-3 text-gray-600 text-sm">
+                        <a href="#" class="hover:text-[#2d5567] transition-colors">
+                            Residential
+                        </a>
+                        <a href="#" class="hover:text-[#2d5567] transition-colors">
+                            Lettings & management
+                        </a>
+                        <a href="#" class="hover:text-[#2d5567] transition-colors">
+                            Commercial leasing
+                        </a>
+                        <a href="#" class="hover:text-[#2d5567] transition-colors">
+                            Property valuation
+                        </a>
+                        <a href="#" class="hover:text-[#2d5567] transition-colors">
+                            Investment advisory
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full sm:w-[45%] lg:w-[30%]">
+                    <h2 class="font-bold text-lg mb-5 text-gray-900">
+                        Get in touch
+                    </h2>
+                    <div class="flex flex-col gap-4 text-gray-600 text-sm">
+                        <p class="flex gap-3 items-start">
+                            <i class="fa-solid fa-location-dot mt-1 text-[#2d5567]"></i>
+                            <span>
+                                214 Harbour Street, Suite 30,
+                                <br>
+                                Seattle WA
+                            </span>
+                        </p>
+                        <p class="flex gap-3 items-center">
+                            <i class="fa-solid fa-phone text-[#2d5567]"></i>
+                            <span>
+                                +1 (415) 555-0100
+                            </span>
+                        </p>
+                        <p class="flex gap-3 items-center">
+                            <i class="fa-solid fa-envelope text-[#2d5567]"></i>
+                            <span>
+                                hello@luxerealty.com
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black py-7 px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 w-full mt-6 gap-3">
+            <p>
+                &copy; 2026 LUXE REALTY. All rights reserved.
+            </p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white transition-colors">
+                    Privacy Policy
+                </a>
+                <span>|</span>
+                <a href="#" class="hover:text-white transition-colors">
+                    Terms of Service
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
