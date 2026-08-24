@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="min-h-screen text-gray-900 bg-[#f5f4ef]">
+  <header class="bg-black/90 z-50 px-6 h-16 flex justify-between items-center text-white fixed w-full top-0 shadow-lg transition-all duration-300">
+        <a href="index.html" class="font-bold text-2xl ml-5 hover:text-[#9eb8c2] transition-colors cursor-pointer">
+            LUXE REALTY
+        </a>
+        <nav id="menu" class="absolute w-dvw md:w-auto bg-black hidden md:flex md:static right-0 top-16">
+            <ul class="flex gap-7 p-4 md:p-2 flex-col md:flex-row items-center font-medium text-sm">
+                <li >
+                    <a  href="index.html" class="text-[#9eb8c2] px-4 md:px-0 py-2 border-b-2 border-[#9bb3bd]">
+                        Home
+                    </a>
+                </li>
+                <li >
+                    <a  href="properties.html" class="hover:text-[#9eb8c2] transition-colors px-4 md:px-0 py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        Properties
+                    </a>
+                </li>
+                <li >
+                    <a  href="about.html" class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 px-4 md:px-0 border-transparent hover:border-[#9eb8c2]">
+                        About Us
+                    </a>
+                </li>
+                <li >
+                    <a  href="contact.html" class="hover:text-[#9eb8c2] transition-colors px-4 md:px-0 py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        Contact
+                    </a>
+                </li>
+                <li >
+                    <a  href="favorities.html" class="hover:text-[#9eb8c2] transition-colors px-4 md:px-0 py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        Favorites
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button id="btn" class="text-xl cursor-pointer md:hidden hover:text-[#9eb8c2] transition-colors" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <main>
+         <section class="bg-[#f5f4ef] px-6 py-10 md:px-12 md:py-12">
+            <div class="max-w-6xl mx-auto mt-16 flex items-center gap-2 flex-wrap">
+                <a href="index.html" class="text-gray-500">Home</a>
+                <span class="text-gray-400">/</span>
+                <a href="properties.html" class="text-gray-500">Properties</a>
+                <span class="text-gray-400">/</span>
+                <h1 class="text-gray-700 font-bold">Skyline Penthouse Residence</h1>
+            </div>
+        </section>
+        <section class="bg-gray-300 px-6 py-10 md:px-12 md:py-12">
+            <div class="mb-5 ">
+                <img src="images/Skyline.png
+                " alt="Skyline" class="rounded-2xl">
+            </div>
+            <div class="flex gap-4 mb-4">
+                <div>
+                    <img src="images/Skyline.png" alt="Skyline" class="rounded-2xl">
+                </div>
+                <div>
+                    <img src="images/studio.png" alt="studio" class="rounded-2xl">
+                </div>
+                <div>
+                    <img src="images/image1.png" alt="image1" class="rounded-2xl">
+                </div>
+                <div>
+                    <img src="images/office.png" alt="office" class="rounded-2xl">
+                </div>
+            </div>
+            <div class="rounded-2xl bg-gray-500 p-4">
+                <h2 class="text-blue-100/90 ml-1 mb-2 font-bold text-2xl">Skyline Penthouse Residence</h2>
+                <p class="flex gap-2 items-center ml-1 text-blue-200/80 text-sm mb-4"><i class="fa-solid fa-location-dot"></i>Manhattan, New York</p>
+                <p class="text-blue-100 font-bold text-xl ml-1 mt-4">$1,850,000</p>
+                <hr class="border-white/10 mt-4">
+                            <div class="text-blue-100/90 flex justify-between px-3 py-3 text-sm">
+                                <p>4 Beds</p>
+                                <p>5 Baths</p>
+                                <p>4300 ft²</p>
+                            </div>
+                            <hr class="border-white/10">
+                            <div class="mt-2 p-5">
+                                <h2 class="font-bold text-blue-100/50">Liam Castellano</h2>
+                                <p class="text-xs">Luxury Portfolio Lead</p>
+                            </div>
+                            <div class="flex flex-col w-full gap-3">
+                                <button class="border border-white/25 rounded p-3 hover:text-white hover:bg-gray-900 cursor-pointer transition-all duration-100 shadow-lg">Contact agent</button>
+                                <button class="border border-white/25 rounded p-3 flex gap-2 items-center justify-center hover:bg-gray-900 hover:text-white cursor-pointer transition-all duration-100 shadow-lg"><i class="fa-regular fa-heart"></i>Save property</button>
+                                <button class="hover:bg-gray-900 cursor-pointer hover:text-white p-3 rounded transition-all duration-100 flex gap-2 items-center justify-center"><i class="fa-solid fa-share-nodes"></i>Share</button>
+                            </div>
+            </div>
+        </section>
+        <section class="bg-[#151514] px-6 py-10 md:px-12 md:py-12">
+            <div class="text-white mb-3">
+                <h2 class="font-bold text-2xl mb-2">Description</h2>
+                <p class="text-xs">A rare corner penthouse wrapped in floor-to-ceiling glass, delivering uninterrupted skyline views from every principal room. The residence has been finished with white oak floors, a chef's kitchen and a private elevator landing.</p>
+            </div>
+            <div>
+                <h2 class="mb-4 text-white font-bold text-2xl">Property information</h2>
+                <div class="flex justify-between bg-[#1D1D1C] p-4 rounded-2xl mb-2 text-white">
+                    <h2 class="text-white/25">Property ID</h2>
+                    <p class="font-bold">SKYLINE-PENTHOUSE</p>
+                </div>
+                 <div class="flex justify-between bg-[#1D1D1C] p-4 rounded-2xl mb-2 text-white">
+                    <h2 class="text-white/25">Type</h2>
+                    <p class="font-bold">Apartment</p>
+                </div>
+                 <div class="flex justify-between bg-[#1D1D1C] p-4 rounded-2xl mb-2 text-white">
+                    <h2 class="text-white/25">Status</h2>
+                    <p class="font-bold">For Sale</p>
+                </div>
+                 <div class="flex justify-between bg-[#1D1D1C] p-4 rounded-2xl mb-2 text-white">
+                    <h2 class="text-white/25">Bedrooms</h2>
+                    <p class="font-bold">3</p>
+                </div>
+                 <div class="flex justify-between bg-[#1D1D1C] p-4 rounded-2xl mb-2 text-white">
+                    <h2 class="text-white/25">Bathrooms</h2>
+                    <p class="font-bold">3</p>
+                </div>
+                 <div class="flex justify-between bg-[#1D1D1C] p-4 rounded-2xl text-white">
+                    <h2 class="text-white/25">Area</h2>
+                    <p class="font-bold">2450 ft²</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

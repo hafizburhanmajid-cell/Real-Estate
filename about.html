@@ -8,31 +8,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body class="min-h-screen text-gray-900 bg-[#f5f4ef]">
-    <header class="bg-black/90 z-50 px-6 h-16 flex justify-between items-center text-white fixed w-full top-0 shadow-lg">
-        <a href="home.html" class="font-bold text-2xl ml-2 md:ml-5 hover:text-[#9eb8c2] transition-colors duration-300">LUXE REALTY</a>
-        <nav>
-            <ul class="md:flex gap-7 hidden font-medium text-sm">
-                <li>
-                    <a href="index.html" class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">Home</a>
-                </li>
-                <li>
-                    <a href="properties.html" class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">Properties</a>
-                </li>
-                <li>
-                    <a href="about.html" class="text-[#9eb8c2] py-2 border-b-2 border-[#9eb8c2]">About Us</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">Contact
+   <header class="bg-black/90 z-50 px-6 h-16 flex justify-between items-center text-white fixed w-full top-0 shadow-lg transition-all duration-300">
+        <a href="index.html" class="font-bold text-2xl ml-5 hover:text-[#9eb8c2] transition-colors cursor-pointer">
+            LUXE REALTY
+        </a>
+        <nav id="menu" class="absolute w-dvw md:w-auto bg-black hidden md:flex md:static right-0 top-16">
+            <ul class="flex gap-7 p-4 md:p-2 flex-col md:flex-row items-center font-medium text-sm">
+                <li >
+                    <a  href="index.html" class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 px-4 md:px-0 border-transparent hover:border-[#9eb8c2]">
+                        Home
                     </a>
                 </li>
-                <li>
-                    <a href="favorities.html"class="hover:text-[#9eb8c2] transition-colors py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">Favorites</a>
+                <li >
+                    <a  href="properties.html" class="hover:text-[#9eb8c2] transition-colors px-4 md:px-0 py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        Properties
+                    </a>
+                </li>
+                <li >
+                    <a  href="about.html" class="text-[#9eb8c2] px-4 md:px-0 py-2 border-b-2 border-[#9bb3bd]">
+                        About Us
+                    </a>
+                </li>
+                <li >
+                    <a  href="contact.html" class="hover:text-[#9eb8c2] transition-colors px-4 md:px-0 py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        Contact
+                    </a>
+                </li>
+                <li >
+                    <a  href="favorities.html" class="hover:text-[#9eb8c2] transition-colors px-4 md:px-0 py-2 border-b-2 border-transparent hover:border-[#9eb8c2]">
+                        Favorites
+                    </a>
                 </li>
             </ul>
         </nav>
-        <button class="text-xl cursor-pointer md:hidden hover:text-[#9eb8c2] transition-colors" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+        <button id="btn" class="text-xl cursor-pointer md:hidden hover:text-[#9eb8c2] transition-colors" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
-    <main id="about">
+    <main>
         <section class="bg-[#f5f4ef] px-6 py-10 md:px-12 md:py-12">
              <div class="max-w-6xl mx-auto mb-9">
                 <h1 class="font-bold text-4xl md:text-5xl mt-16">About us</h1>
@@ -114,7 +127,6 @@
                 </div>
             </div>
         </section>
-        <!-- ================= WHY CHOOSE US ================= -->
         <section class="py-20 px-5 bg-white">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-12">
@@ -138,7 +150,6 @@
                             One person owns your move from first call to keys.
                         </p>
                     </div>
-                    <!-- Reason 2 -->
                     <div class="group rounded-2xl border border-gray-200 bg-[#f7f8f7] px-7 py-7 hover:bg-black hover:text-white hover:-translate-y-2 transition-all duration-500">
                         <div class="w-12 h-12 rounded-full bg-[#2d5567] text-white flex items-center justify-center mb-5 group-hover:bg-[#9eb8c2] transition-colors">
                             <i class="fa-solid fa-camera"></i>
@@ -150,7 +161,6 @@
                             Shot in person, never staged with stock imagery.
                         </p>
                     </div>
-                    <!-- Reason 3 -->
                     <div class="group rounded-2xl border border-gray-200 bg-[#f7f8f7] px-7 py-7 hover:bg-black hover:text-white hover:-translate-y-2 transition-all duration-500">
                         <div class="w-12 h-12 rounded-full bg-[#2d5567] text-white flex items-center justify-center mb-5 group-hover:bg-[#9eb8c2] transition-colors">
                             <i class="fa-solid fa-chart-line"></i>
@@ -162,7 +172,6 @@
                             Comparables and time-on-market modelled before listing.
                         </p>
                     </div>
-                    <!-- Reason 4 -->
                     <div class="group rounded-2xl border border-gray-200 bg-[#f7f8f7] px-7 py-7 hover:bg-black hover:text-white hover:-translate-y-2 transition-all duration-500">
                         <div class="w-12 h-12 rounded-full bg-[#2d5567] text-white flex items-center justify-center mb-5 group-hover:bg-[#9eb8c2] transition-colors">
                             <i class="fa-solid fa-calendar-days"></i>
@@ -177,7 +186,6 @@
                 </div>
             </div>
         </section>
-        <!-- ================= TEAM ================= -->
         <section class="py-20 px-5 bg-[#eef2f1]">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-12">
@@ -189,7 +197,6 @@
                     </h2>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Amara -->
                     <div class="group rounded-2xl bg-black text-white px-5 py-7 text-center shadow-lg hover:-translate-y-3 transition-all duration-500">
                         <div class="overflow-hidden rounded-full w-32 h-32 mx-auto mb-5">
                             <img src="images/person1.png" alt="Amara Okafor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
@@ -201,7 +208,6 @@
                             Senior Sales Advisor
                         </p>
                     </div>
-                    <!-- Liam -->
                     <div class="group rounded-2xl bg-black text-white px-5 py-7 text-center shadow-lg hover:-translate-y-3 transition-all duration-500">
                         <div class="overflow-hidden rounded-full w-32 h-32 mx-auto mb-5">
                             <img src="images/person2.png" alt="Liam Castellano" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
@@ -213,7 +219,6 @@
                             Luxury Portfolio Lead
                         </p>
                     </div>
-                    <!-- Sofia -->
                     <div class="group rounded-2xl bg-black text-white px-5 py-7 text-center shadow-lg hover:-translate-y-3 transition-all duration-500">
                         <div class="overflow-hidden rounded-full w-32 h-32 mx-auto mb-5">
                             <img src="images/person3.png" alt="Sofia Rendell" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
@@ -225,7 +230,6 @@
                             Rentals Specialist
                         </p>
                     </div>
-                    <!-- Mateo -->
                     <div class="group rounded-2xl bg-black text-white px-5 py-7 text-center shadow-lg hover:-translate-y-3 transition-all duration-500">
                         <div class="overflow-hidden rounded-full w-32 h-32 mx-auto mb-5">
                             <img src="images/person4.png" alt="Mateo Herrera" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
@@ -418,5 +422,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/about.js"></script>
 </body>
 </html>
