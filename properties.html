@@ -60,7 +60,7 @@
                         <label for="type" class="text-lg font-semibold text-gray-800">
                             Property type
                         </label>
-                        <select id="type" name="type" class="w-full px-3 py-2.5 rounded-lg border border-gray-300 bg-white outline-none focus:border-black transition-all">
+                        <select id="propertytype" name="type" class="w-full px-3 py-2.5 rounded-lg border border-gray-300 bg-white outline-none focus:border-black transition-all">
                             <option value="">Any type</option>
                             <option value="apartment">Apartment</option>
                             <option value="commercial">Commercial</option>
@@ -71,10 +71,10 @@
                         </select>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <label for="location" class="text-lg font-semibold text-gray-800">
+                        <label id="location" for="location" class="text-lg font-semibold text-gray-800">
                             Location
                         </label>
-                        <select id="location" name="location" class="w-full px-3 py-2.5 rounded-lg border border-gray-300 bg-white outline-none focus:border-black transition-all">
+                        <select id="location1" name="location" class="w-full px-3 py-2.5 rounded-lg border border-gray-300 bg-white outline-none focus:border-black transition-all">
                             <option value="">Any location</option>
                             <option value="manhattan">Manhattan, New York</option>
                             <option value="palm-coast">Palm Coast, Florida</option>
@@ -120,11 +120,11 @@
                             <option value="5">5+ bedrooms</option>
                         </select>
                     </div>
-                    <div class="flex gap-3">
+                    <div id="apply-filter" class="flex gap-3">
                         <button type="button" class=" rounded-lg py-2 bg-[#142a34] text-white px-4 flex justify-center items-center hover:bg-[#0e3444] cursor-pointer transition-all duration-300 shadow-md hover:shadow-lg">
                         Apply filters
                     </button>
-                    <button type="button" class="rounded-lg py-2 px-2 bg-[#142a34] text-white flex items-center gap-2 justify-center hover:bg-[#0e3444] cursor-pointer transition-all duration-300 shadow-md hover:shadow-lg">
+                    <button id="reset-filter" type="button" class="rounded-lg py-2 px-2 bg-[#142a34] text-white flex items-center gap-2 justify-center hover:bg-[#0e3444] cursor-pointer transition-all duration-300 shadow-md hover:shadow-lg">
                         <i class="fa-solid fa-rotate-left"></i>
                         Reset filters
                     </button>
