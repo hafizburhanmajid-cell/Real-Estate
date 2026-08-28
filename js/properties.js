@@ -9,9 +9,31 @@ const maxPrice = document.getElementById("maxPrice");
 const salerent = document.getElementById("sale-rent");
 const bedrooms=document.getElementById("bedrooms");
 const favbtn = document.querySelectorAll(".fav-btn");
-btn.addEventListener("click",function(){
-    menu.classList.toggle("hidden");
-});
+if (btn && menu) {
+    btn.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+        const menuIcon=btn.querySelector("i");
+        if(menuIcon){
+            menuIcon.classList.toggle("fa-bars");
+            menuIcon.classList.toggle("fa-xmark");
+        }
+        const isOpen=!menu.classList.contains("hidden");
+        btn.setAttribute("aria-expanded",isOpen? "true" : "false");
+    });
+    menu.querySelectorAll("a").forEach(function(link){
+        link.addEventListener("click",function(){
+            if(!menu.classList.contains("hidden")){
+               menu.classList.add("hidden");
+               const menuIcon=btn.querySelector("i");
+               if(menuIcon){
+                  menuIcon.classList.remove("fa-xmark");
+                  menuIcon.classList.add("fa-bars")
+            }
+            btn.setAttribute("aria-expanded","false");
+         }
+     });
+  }); 
+} 
 applyFilter.addEventListener("click", function () {
       if(propertytype.parentElement.querySelector(".err-pt")){
         propertytype.parentElement.querySelector(".err-pt").remove();
